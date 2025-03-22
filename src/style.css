@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(7, 7, 7), rgb(51, 51, 51), rgb(7, 7, 7));
+}
+/*Основные границы*/
+.main-conteiner {
+  height: 3700px;
+  width: 1900px;
+}
+/*Основной контейнер с информацией*/
+.box {
+  height: 3700px;
+  width: 1300px;
+  margin: 0 200px 0 300px;
+  box-shadow: 0px 0px 50px 15px rgba(128, 128, 128, 0.4) inset;
+}
+.taitale-box {
+  position: relative;
+  display: flex; 
+}
+#orb {
+  background: #ffbb00;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+}
+.orb2 {
+  z-index: 2;
+}
+/* Основной контент */
+.MyNameIs {
+    position: relative; 
+    z-index: 2;
+    padding: 250px 100px 100px 350px;
+}
+.MyNameIs p {
+  color: #fff;
+}
+.one {
+    font-size: 35px;
+    padding-left: 22px
+      
+}
+.two {
+    font-size: 80px;
+    padding: 0%;
+    margin: 0%;
+}
+/* Внешний вид кнопки */
+.button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  background: rgba(255, 255, 255, 0.377);
+  border-radius: 30px;
+  margin: 25px 0px;
+  margin-right: 10px;
+  font-size: 17px;
+}
+.button:hover {
+  background: #ffbb00;
+}
+/* Социальные сети */
+.lable {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  top: 45%;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: left top;
+  white-space: nowrap;
+  height: 24px;
+  align-items: center;
+  }
+  .sns {
+    font-size: 25px;
+  }
+  
+.lable  label{
+  color:#ffbb00;
+}
+.emdash {
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
+}
+a { 
+  display: inline;
+  margin: 5px;
+}
+/* Кнопка открытия боковой панели */
+#open-sidebar {
+  background: none;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 17px;
+}
+#open-sidebar:hover {
+  background:rgba(255, 255, 255, 0.377);
+}
+/* Боковая панель */
+.sidebar {
+  position: fixed;
+  top: 0px;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background: #ffbb00;  
+}
+/* Кнопка закрытия боковой панели */
+#close-sidebar {
+  position: absolute;
+  top: 10px;
+  left: 270px;
+  background: none;
+  height: 20px;
+  width: 20px;
+  border: 7px;
+  border-color: black;
+  font-size: 24px;
+  cursor: pointer;
+  background-image: url("../public/x.svg");
+}
+/* Список в боковой панели */
+.li {
+  margin-left: 40px;
+}
+.sidebar ul li{
+  padding-top: 30px;
+  font-size: 20px;
+ }
+ul li::marker {
+  color: black;
+  font-weight: bold;
+}
+/* Ссылки в боковой панели */
+.sidebar-sns {
+  display: inline;
+  position: absolute;
+  top: 95%;
+  left: 75px;
+}
+.sidebar-sns a {
+  margin-right: 15px;
+}
+/* Затемнение фона */
+.averlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* Классы для открытия панели и затемнения */
+.sidebar.open {
+  left: 0;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Контейнер с информацией обо мне */
+.box-aboutMe {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 300px 0 250px 0;
+  padding: 20px;
+  position: relative;  
+}
+/* Контейнер с моей фотографией */
+.box-photo {
+  flex: 1;
+  margin-right: 50px;
+}
+.my-photo{
+  border-radius: 10%;
+}
+/* Основная информация обо мне */
+.aboutMe {
+  flex: 2;
+}
+.aboutMe p1, p2, p {
+  color: #fff;
+}
+.aboutMe b {
+  color: #ffbb00;
+}
+.aboutMe p1 {
+  display: block;
+  font-size: 35px;
+  padding: 20px 0 0 26px;
+}
+.p { 
+  font-size: 18px;
+}
+.aboutMe p2 {
+  display: block;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+}
+
+/* Orb im About me */
+.box-orb3{
+  display: flex;
+  position: relative;
+}
+.orbInAboutMe {
+  background: #ffbb00;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  position:absolute;
+  z-index: 1;
+  top: 5px;
+}
+.orb3 {
+  z-index: 2;
+}
+
+/* Контейнер с моими навыками */
+.mySkills {
+  height: 1400px;
+  width: 1260px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Orb im me skills */
+.orbInMySkills {
+  background: #ffbb00;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  position:absolute;
+  left: 600px;
+  top: 25px;
+  z-index: 1;
+}
+.p3 {
+  height: 50px;
+  width: 1260px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;  
+  margin-bottom: 100px;
+  z-index: 2;
+}
+.p4 {
+  font-size: 55px;
+}
+
+
+/* Парамеры контейнера */
+.box-skills {
+  width: 385px;
+  margin: 10px;
+  float: left;
+  border: 7px solid #ffbb00;
+  border-style: double;
+  border-radius: 5%;
+  background: #fff;
+}
+.name-box{
+  padding: 30px 0 10px 20px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.logo-box {
+  padding: 0 0 50px 20px;
+}
+.info-box {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+}
