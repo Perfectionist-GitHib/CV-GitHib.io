@@ -10,7 +10,7 @@ body {
   width: 1900px;
 }
 /*Основной контейнер с информацией*/
-.box {
+.greeting-box {
   height: 3700px;
   width: 1300px;
   margin: 0 200px 0 300px;
@@ -20,7 +20,7 @@ body {
   position: relative;
   display: flex; 
 }
-#orb {
+#circle-decoration {
   background: #ffbb00;
   width: 70px;
   height: 70px;
@@ -29,30 +29,30 @@ body {
   z-index: 1;
   top: 20px;
 }
-.orb2 {
+.title-text {
   z-index: 2;
 }
 /* Основной контент */
-.MyNameIs {
+.greeting-content {
     position: relative; 
     z-index: 2;
     padding: 250px 100px 100px 350px;
 }
-.MyNameIs p {
+.greeting-content p {
   color: #fff;
 }
-.one {
+.greeting-text {
     font-size: 35px;
     padding-left: 22px
       
 }
-.two {
+.profession-text {
     font-size: 80px;
     padding: 0%;
     margin: 0%;
 }
 /* Внешний вид кнопки */
-.button {
+.action-button {
   height: 40px;
   width: 150px;
   border: none;
@@ -62,11 +62,11 @@ body {
   margin-right: 10px;
   font-size: 17px;
 }
-.button:hover {
+.action-button:hover {
   background: #ffbb00;
 }
 /* Социальные сети */
-.lable {
+.social-links {
   display: flex;
   position: fixed;
   left: 20px;
@@ -77,14 +77,14 @@ body {
   height: 24px;
   align-items: center;
   }
-  .sns {
+  .social-label {
     font-size: 25px;
   }
   
-.lable  label{
+.social-links{
   color:#ffbb00;
 }
-.emdash {
+.dash-line {
   display: inline-block;
   width: 100px;
   vertical-align: middle;
@@ -142,13 +142,13 @@ ul li::marker {
   font-weight: bold;
 }
 /* Ссылки в боковой панели */
-.sidebar-sns {
+.sidebar-social {
   display: inline;
   position: absolute;
   top: 95%;
   left: 75px;
 }
-.sidebar-sns a {
+.sidebar-social a {
   margin-right: 15px;
 }
 /* Затемнение фона */
@@ -173,7 +173,7 @@ ul li::marker {
 }
 
 /* Контейнер с информацией обо мне */
-.box-aboutMe {
+.about-container {
   height: 800px;
   display: flex;
   align-items: center;
@@ -183,7 +183,7 @@ ul li::marker {
   position: relative;  
 }
 /* Контейнер с моей фотографией */
-.box-photo {
+.photo-container {
   flex: 1;
   margin-right: 50px;
 }
@@ -191,35 +191,35 @@ ul li::marker {
   border-radius: 10%;
 }
 /* Основная информация обо мне */
-.aboutMe {
+.about-content {
   flex: 2;
 }
-.aboutMe p1, p2, p {
+.about-content p1, p2, p {
   color: #fff;
 }
-.aboutMe b {
+.about-content b {
   color: #ffbb00;
 }
-.aboutMe p1 {
+.about-content p1 {
   display: block;
   font-size: 35px;
   padding: 20px 0 0 26px;
 }
-.p { 
+.about-text { 
   font-size: 18px;
 }
-.aboutMe p2 {
+.about-content p2 {
   display: block;
   font-size: 50px;
   margin: 0 0 20px 0;
 }
 
 /* Orb im About me */
-.box-orb3{
+.about-title-wrapper{
   display: flex;
   position: relative;
 }
-.orbInAboutMe {
+.circle-decoration-small {
   background: #ffbb00;
   width: 70px;
   height: 70px;
@@ -228,12 +228,12 @@ ul li::marker {
   z-index: 1;
   top: 5px;
 }
-.orb3 {
+.about-title {
   z-index: 2;
 }
 
 /* Контейнер с моими навыками */
-.mySkills {
+.skills-section {
   height: 1400px;
   width: 1260px;
   margin-left: 20px;
@@ -243,7 +243,7 @@ ul li::marker {
 }
 
 /* Orb im me skills */
-.orbInMySkills {
+.circle-decoration-large {
   background: #ffbb00;
   width: 70px;
   height: 70px;
@@ -253,7 +253,7 @@ ul li::marker {
   top: 25px;
   z-index: 1;
 }
-.p3 {
+.skills-header {
   height: 50px;
   width: 1260px;
   font-size: 35px;
@@ -263,13 +263,13 @@ ul li::marker {
   margin-bottom: 100px;
   z-index: 2;
 }
-.p4 {
+.skills-subheader {
   font-size: 55px;
 }
 
 
 /* Парамеры контейнера */
-.box-skills {
+.skill-card {
   width: 385px;
   margin: 10px;
   float: left;
@@ -278,16 +278,17 @@ ul li::marker {
   border-radius: 5%;
   background: #fff;
 }
-.name-box{
+.skill-name{
   padding: 30px 0 10px 20px;
   font-size: 25px;
   font-weight: bolder;
 }
-.logo-box {
+.skill-icon {
   padding: 0 0 50px 20px;
 }
-.info-box {
+.skill-description {
   font-size: 25px;
   font-weight: bold;
   padding: 0 0 0 10px;
 }
+
